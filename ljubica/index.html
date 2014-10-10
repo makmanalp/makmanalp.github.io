@@ -1,0 +1,38 @@
+<!doctype html>
+<meta charset="utf-8">
+ 
+<script src="http://www.d3plus.org/js/d3.js"></script>
+<script src="http://www.d3plus.org/js/d3plus.js"></script>
+ 
+<div id="viz"></div>
+ 
+<script>
+
+
+d3.json("data_clean.json", function(error, data){
+if (error) return console.warn(error);
+
+var visualization = d3plus.viz()
+    .container("#viz")
+    .data(data)
+    .type("tree_map")
+    .id(["ind_2dig", "ind_3dig"])
+    .depth(1)
+    .color("ind_2dig")
+    .text("indname_3dig")
+    .size("empsh_ALBANIA")
+    .ui([
+            {
+                "method" : "size",
+                "value"  : [ "empsh_ALBANIA" , "empsh_BERAT", "empsh_DIBER" ,
+                    "empsh_DURRES", "empsh_ELBASAN", "empsh_FIER", "empsh_GJIROKASTER",
+                    "empsh_KORCE", "empsh_KUKES", "empsh_LEZHE", "empsh_SHKODER",
+                    "empsh_TIRANE", "empsh_VLORE"]
+
+            },
+    ])
+.draw()
+
+});
+
+</script>

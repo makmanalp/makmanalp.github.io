@@ -39,5 +39,5 @@ var lyr_ThomasLoganSurvey1813_2 = new ol.layer.Image({
                             })
                         });
 
-lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_ThomasLoganSurvey181350transparent_1.setVisible(false);lyr_ThomasLoganSurvey1813_2.setVisible(true);
+lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_ThomasLoganSurvey181350transparent_1.setVisible(true);lyr_ThomasLoganSurvey1813_2.setVisible(false);
 var layersList = [lyr_GoogleSatelliteHybrid_0,lyr_ThomasLoganSurvey181350transparent_1,lyr_ThomasLoganSurvey1813_2];
